@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">EditChoiceDialog</string>
+    <string name="title"></string>
+    <string-array name="edits_array_1">
+        <item>厨房</item>
+        <item>客厅</item>
+        <item>卫生间</item>
+        <item>走廊</item>
+        <item>孩子房间</item>
+    </string-array>
+
+    <string-array name="edits_array_2">
+        <item>灯</item>
+        <item>吊顶灯</item>
+        <item>浴霸</item>
+        <item>电视机</item>
+    </string-array>
+</resources>

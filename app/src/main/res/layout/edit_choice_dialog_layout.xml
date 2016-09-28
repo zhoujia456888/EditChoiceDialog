@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:id="@+id/ly_titlte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题"
+            android:textSize="@dimen/md_title_textsize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_txt_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="这里是内容"
+            android:textSize="@dimen/md_content_textsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.example.zhouj.editchoicedialog.EditSpinner
+            android:id="@+id/ed_firstword"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="1"
+            android:singleLine="true"
+            android:textSize="@dimen/md_content_textsize"
+            app:dropDownDrawable="@drawable/picker"
+            app:dropDownDrawableHeight="25dp"
+            app:dropDownDrawableSpacing="15dp"
+            app:dropDownDrawableWidth="14dp" />
+
+        <TextView
+            android:id="@+id/de"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="的"
+            android:textSize="@dimen/md_content_textsize" />
+
+        <com.example.zhouj.editchoicedialog.EditSpinner
+            android:id="@+id/ed_secondword"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="1"
+            android:singleLine="true"
+            android:textSize="@dimen/md_content_textsize"
+            app:dropDownDrawable="@drawable/picker"
+            app:dropDownDrawableHeight="25dp"
+            app:dropDownDrawableSpacing="15dp"
+            app:dropDownDrawableWidth="14dp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/cancel"
+                style="@style/MD_ActionButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="取消" />
+
+            <TextView
+                android:id="@+id/confirm"
+                style="@style/MD_ActionButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="确认" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
